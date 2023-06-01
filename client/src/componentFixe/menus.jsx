@@ -19,9 +19,6 @@ const Menu = () => {
           <li>
             <Link to="/cards">Les Cartes</Link>
           </li>
-          <li>
-            <Link to="/about">À propos</Link>
-          </li>
         </ul>
       </div>
     </nav>
