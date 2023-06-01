@@ -44,18 +44,18 @@ Tailwind CSS : un framework CSS utilitaire pour le développement rapide.
 Eslint : un linter pour identifier et signaler les problèmes dans le code JavaScript.
 # Structure du projet
 
-├── Back/                        # Répertoire Api server
-│         ├── connect/                        # URL connexion a axios
-│         ├── route/                              # route de connexion
-├── client/                        # Répertoire Api react
-│         ├── src/                        # Répertoire source
-│         │   ├── components/             # Composants React
-│         │   ├── componentsFixe/    # Composants Fixe React (menu)
-│         │   ├── images/                 # Images du site
-│         │   ├── App.js                  # Composant principal de l'application
-│         │   └── index.js                # Point d'entrée de l'application
-│        ├── package.json                # Fichier de configuration du projet React
-│       └── README.md                   # Fichier README du projet
-├── package.json                # Fichier de configuration du projet Server
-├── README.md                   # Fichier README du projet
-└── server.js                             # Fichier main du projet
+echo "├── Back/                        # Répertoire Api server"
+echo "│         ├── connect/                        # URL connexion a axios"
+echo "│         ├── route/                              # route de connexion"
+echo "├── client/                        # Répertoire Api react"
+echo "│         ├── src/                        # Répertoire source"
+echo "│         │   ├── components/             # Composants React"
+echo "│         │   ├── componentsFixe/    # Composants Fixe React (menu)"
+echo "│         │   ├── images/                 # Images du site"
+echo "│         │   ├── App.js                  # Composant principal de l'application"
+echo "│         │   └── index.js                # Point d'entrée de l'application"
+echo "│        ├── package.json                # Fichier de configuration du projet React"
+echo "│       └── README.md                   # Fichier README du projet"
+echo "├── package.json                # Fichier de configuration du projet Server"
+echo "├── README.md                   # Fichier README du projet"
+echo "└── server.js                             # Fichier main du projet"
