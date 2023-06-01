@@ -104,7 +104,6 @@ const Cards = () => {
             </select>
           </div>
           <div>
-            {/* Champ de recherche */}
             <input
               type="text"
               placeholder="Rechercher par nom..."
@@ -117,7 +116,6 @@ const Cards = () => {
       </div>
       {collectionsLoading ? (
         <div className="fixed top-0 left-0 w-full h-screen flex items-center justify-center">
-          {/* Animation de chargement */}
           <div className="relative w-full">
             <video src={video} autoPlay loop className="mx-auto" style={{ transform: 'scale(0.33)' }} />
           </div>
@@ -126,7 +124,6 @@ const Cards = () => {
       ) : (
         <div>
           <div className="grid grid-cols-4 gap-4 mt-32">
-            {/* Affichage des cartes */}
             {cards.map((card) => (
               <Link key={card.id} to={`/cards-detailed/${card.id}`} className="p-4 border border-gray-200 rounded hover:shadow-md hover:bg-yellow-200">
                 <h2 className="text-lg font-bold">{card.name}</h2>
