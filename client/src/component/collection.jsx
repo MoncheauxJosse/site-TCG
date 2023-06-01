@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Link } from 'react-router-dom';
 import './collection.css';
 import loading from '../image/gif/loadingCollection.gif';
 import fondImage from '../image/video/Pokemon-Background-Loop.mp4';
@@ -139,7 +139,9 @@ return (
             <div className="text-center flex flex-col justify-start">
               <div className="p-4 max-w-[300px] mx-auto text-white">
                 <div className="p-4 flex items-center justify-center">
-                  <img src={cardData.images.small} alt={cardData.name} />
+                < Link key={cardData.id} to={`/cards-detailed/${cardData.id}`} className="p-4 rounded hover:shadow-md hover:bg-yellow-200">
+                  <img src={cardData.images.small} alt={cardData.name}/>
+                  </Link>
                 </div>
               </div>
             </div>
