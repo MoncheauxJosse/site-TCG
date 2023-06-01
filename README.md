@@ -44,18 +44,19 @@ Tailwind CSS : un framework CSS utilitaire pour le développement rapide.
 Eslint : un linter pour identifier et signaler les problèmes dans le code JavaScript.
 # Structure du projet
 
-├── Back/                        # Répertoire Api server"
-│         ├── connect/                        # URL connexion a axios"
-│         ├── route/                              # route de connexion"
-├── client/                        # Répertoire Api react"
-│         ├── src/                        # Répertoire source"
-│         │   ├── components/             # Composants React"
-│         │   ├── componentsFixe/    # Composants Fixe React (menu)"
-│         │   ├── images/                 # Images du site"
-│         │   ├── App.js                  # Composant principal de l'application"
-│         │   └── index.js                # Point d'entrée de l'application"
-│        ├── package.json                # Fichier de configuration du projet React"
-│       └── README.md                   # Fichier README du projet"
-├── package.json                # Fichier de configuration du projet Server"
-├── README.md                   # Fichier README du projet"
-└── server.js                             # Fichier main du projet"
+Structure du projet
+├── Back/                        # Répertoire Api server
+│    ├── connect/                # URL connexion a axios
+│    └── route/                  # route de connexion
+├── client/                      # Répertoire Api react
+│    ├── src/                    # Répertoire source
+│    │   ├── components/         # Composants React
+│    │   ├── componentsFixe/     # Composants Fixe React (menu)
+│    │   ├── images/             # Images du site
+│    │   ├── App.js              # Composant principal de l'application
+│    │   └── index.js            # Point d'entrée de l'application
+│    ├── package.json            # Fichier de configuration du projet React
+│    └── README.md               # Fichier README du projet
+├── package.json                # Fichier de configuration du projet Server
+├── README.md                   # Fichier README du projet
+└── server.js                    # Fichier main du projet
