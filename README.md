@@ -43,8 +43,7 @@ Axios : une bibliothèque pour effectuer des requêtes HTTP.
 Tailwind CSS : un framework CSS utilitaire pour le développement rapide.
 Eslint : un linter pour identifier et signaler les problèmes dans le code JavaScript.
 # Structure du projet
-
-Structure du projet
+```
 ├── Back/                        # Répertoire Api server
 │    ├── connect/                # URL connexion a axios
 │    └── route/                  # route de connexion
@@ -60,3 +59,4 @@ Structure du projet
 ├── package.json                # Fichier de configuration du projet Server
 ├── README.md                   # Fichier README du projet
 └── server.js                    # Fichier main du projet
+```
