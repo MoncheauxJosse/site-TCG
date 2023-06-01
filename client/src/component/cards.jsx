@@ -6,16 +6,12 @@ import banderoleImage from '../image/banderole.png';
 
 const Cards = () => {
   const [cards, setCards] = useState([]); 
- // stocke l'ID de la collection sélectionnée (<select>)
   const [selectedCollectionId, setSelectedCollectionId] = useState('');
-  //recupere l'id de la collection dans local storage ou celui du <select>
-  const collectionId = selectedCollectionId || localStorage.getItem('selectedCollectionId'); 
-  const [searchTerm, setSearchTerm] = useState(''); 
-  const [collections, setCollections] = useState([]); 
-  const [collectionsLoading, setCollectionsLoading] = useState(true); 
+  const collectionId = selectedCollectionId || localStorage.getItem('selectedCollectionId');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [collections, setCollections] = useState([]);
+  const [collectionsLoading, setCollectionsLoading] = useState(true);
 
-
-  //affiche toute la collection dans le <select>
   useEffect(() => {
     const fetchCollections = async () => {
       try {
@@ -29,8 +25,6 @@ const Cards = () => {
     fetchCollections();
   }, []);
 
-
-  // Effectue une requête pour récupérer les cartes en fonction de la collection et de la recherche du nom
   useEffect(() => {
     const selectedCollectionIdFromStorage = localStorage.getItem('selectedCollectionId');
 
@@ -41,7 +35,7 @@ const Cards = () => {
     setCollectionsLoading(true);
     const fetchCards = async () => {
       try {
-        setCards([]); 
+        setCards([]);
         const params = new URLSearchParams();
 
         if (collectionId !== undefined && collectionId !== 'Toutes les collections') {
@@ -60,24 +54,21 @@ const Cards = () => {
         setCollectionsLoading(false);
       }
     };
-  
+
     fetchCards();
   }, [collectionId, searchTerm]);
 
-  // Gère le changement de collection sélectionnée <select>
   const handleCollectionChange = async (event) => {
     const selectedId = event.target.value || event.target.options[event.target.selectedIndex].text;
     setSelectedCollectionId(selectedId);
     localStorage.setItem('selectedCollectionId', selectedId);
     setCollectionsLoading(true);
-    setSearchTerm('')
+    setSearchTerm('');
   };
 
-  // Gère le changement de recherche de nom
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
-
 
   return (
     <div className="pt-12">
@@ -91,7 +82,7 @@ const Cards = () => {
               onChange={handleCollectionChange}
               className="px-4 py-2 border rounded-md"
             >
-              <option value=''>Toutes les collections</option>
+              <option value="">Toutes les collections</option>
               {collectionsLoading ? (
                 <option>Loading...</option>
               ) : (
@@ -123,14 +114,18 @@ const Cards = () => {
         </div>
       ) : (
         <div>
-          <div className="grid grid-cols-4 gap-4 mt-32">
-            {cards.map((card) => (
-              <Link key={card.id} to={`/cards-detailed/${card.id}`} className="p-4 border border-gray-200 rounded hover:shadow-md hover:bg-yellow-200">
-                <h2 className="text-lg font-bold">{card.name}</h2>
-                <img src={card.images.small} alt={card.name} className="w-full" />
-              </Link>
-            ))}
-          </div>
+          {cards.length > 0 ? (
+            <div className="grid grid-cols-4 gap-4 mt-32">
+              {cards.map((card) => (
+                <Link key={card.id} to={`/cards-detailed/${card.id}`} className="p-4 border border-gray-200 rounded hover:shadow-md hover:bg-yellow-200">
+                  <h2 className="text-lg font-bold">{card.name}</h2>
+                  <img src={card.images.small} alt={card.name} className="w-full" />
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <p className="text-lg text-center mt-32">Aucun résultat trouvé.</p>
+          )}
           <div>
             <img
               src={banderoleImage}
