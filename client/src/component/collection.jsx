@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate , Link } from 'react-router-dom';
 import './collection.css';
 import loading from '../image/gif/loadingCollection.gif';
-import fondImage from '../image/video/Pokemon-Background-Loop.mp4';
+import fondImage from '../image/pokemon-background-loop.gif';
 import banderoleImage from '../image/banderole.png';
 
 
@@ -133,7 +133,7 @@ return (
   )}
 </div>
     <div className="flex relative justify-center mt-1">
-      <div className="relative z-10">
+      <div className=" z-10">
         {cardData && (
           <div className="flex">
             <div className="text-center flex flex-col justify-start">
@@ -147,11 +147,15 @@ return (
             </div>
           </div>
         )}
+         
       </div>
-      <video src={fondImage} autoPlay loop className="absolute top-0 left-0 w-full h-full object-cover z-0" />
-  </div>
 
-    
+      <img src={fondImage} alt="Chargement en cours" className="absolute top-0 left-0 w-full h-full object-cover z-0" />
+        
+      
+      
+  </div>
+ 
   </div>
 );
 
