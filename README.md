@@ -7,13 +7,16 @@ site TCG pokemon  donnant accès à l’intégralité des cartes qui existent ai
 Le site est une application web permettant de visualiser des cartes Pokémon détaillées.
 
 # Installation
-Clonez le dépôt GitHub du projet : git clone <URL du dépôt>
-Accédez au répertoire du projet : cd <répertoire du projet>
-Installez les dépendances : npm install
+1. Clonez le dépôt GitHub du projet : git clone <URL du dépôt>
+
+2. Accédez au répertoire du projet : cd <répertoire du projet>
+
+3. Installez les dépendances : npm install
 
 # Exécution
-Accédez au répertoire du projet : cd site-TCG
-Lancez l'application en mode développement : npm run start
+1.Accédez au répertoire du projet : cd site-TCG
+
+2.Lancez l'application en mode développement : npm run start
 
 # Fonctionnalités
 Affichage des cartes détaillées :
@@ -23,6 +26,11 @@ L'application permet d'afficher les détails d'une carte Pokémon spécifique.
 Endpoints
 
 GET /cards-detailed/{cardId} : Récupère les détails d'une carte Pokémon en fonction de son ID.
+
+### Util :
+
+Affichage des images d'énergie :
+L'application affiche les images d'énergie associées à une carte Pokémon.
 
 ### Composants :
 
@@ -35,9 +43,6 @@ Affiche toutes les cartes Pokémon existantes avec un filtre lié aux différent
 3. Collection :
 Affiche un slider de chaque booster différent, avec une redirection vers Cards si l'un d'entre eux est sélectionné.
 Affiche une carte aléatoire, avec une redirection vers CardsDetailed si sélectionnée.
-
-Affichage des images d'énergie
-L'application affiche les images d'énergie associées à une carte Pokémon.
 
 # Fonctions
 
