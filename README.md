@@ -52,6 +52,7 @@ Eslint : un linter pour identifier et signaler les problèmes dans le code JavaS
 │    │   ├── components/         # Composants React
 │    │   ├── componentsFixe/     # Composants Fixe React (menu)
 │    │   ├── images/             # Images du site
+│    │   ├── util/               # Fonction util pour les component
 │    │   ├── App.js              # Composant principal de l'application
 │    │   └── index.js            # Point d'entrée de l'application
 │    ├── package.json            # Fichier de configuration du projet React
