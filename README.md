@@ -37,11 +37,23 @@ importAll(r) : Importe toutes les images d'énergie à partir d'un répertoire.
 getImageForCost(cost) : Récupère l'image correspondante à un coût spécifique.
 
 # Technologies utilisées
+
 React : une bibliothèque JavaScript pour la construction d'interfaces utilisateur.
 React Router : une bibliothèque de routage pour React.
 Axios : une bibliothèque pour effectuer des requêtes HTTP.
 Tailwind CSS : un framework CSS utilitaire pour le développement rapide.
-Eslint : un linter pour identifier et signaler les problèmes dans le code JavaScript.
+
+Dépendances supplémentaires :
+
+React Slick : un composant de carrousel réactif pour React.
+Slick Carousel : une bibliothèque CSS et JavaScript pour les carrousels.
+Testing Library : des bibliothèques de tests unitaires pour React.
+
+Dépendances de développement :
+
+Autoprefixer : un plugin PostCSS pour ajouter automatiquement les préfixes CSS appropriés.
+PostCSS : un outil de transformation de CSS.
+
 # Structure du projet
 ```
 ├── Back/                        # Répertoire Api server
