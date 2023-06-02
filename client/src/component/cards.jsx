@@ -124,7 +124,10 @@ const Cards = () => {
               ))}
             </div>
           ) : (
-            <p className="text-lg text-center mt-32">Aucun résultat trouvé.</p>
+            <p className="text-lg text-center mt-32">Aucun résultat trouvé
+              <p className="italic">essayez avec le nom entier</p>
+            </p>
+            
           )}
           <div>
             <img

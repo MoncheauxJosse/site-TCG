@@ -122,8 +122,12 @@ const CardsDetailed = () => {
                  PV: {cardData.hp} 
                  </div>
                  <div className="flex items-center">
-                   <span className="mr-2">Type:</span>
-                   <img src={getImageForCost(cardData.types)} alt={cardData.types} className="w-8 h-8" />
+                      <span className="mr-2">Type:</span>
+                 {cardData.types.map((types, index) => (
+                   <div key={index}>
+                      <img src={getImageForCost(types)} alt={types} className="w-8 h-8" />
+                      </div>
+                    ))}
                  </div>
                </div>
              </div>
