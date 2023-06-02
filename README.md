@@ -46,8 +46,6 @@ Axios : une bibliothèque pour effectuer des requêtes HTTP.
 
 Tailwind CSS : un framework CSS utilitaire pour le développement rapide.
 
-Dépendances de développement :
-
 Autoprefixer : un plugin PostCSS pour ajouter automatiquement les préfixes CSS appropriés.
 
 PostCSS : un outil de transformation de CSS.
