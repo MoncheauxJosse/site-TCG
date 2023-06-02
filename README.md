@@ -30,13 +30,13 @@ GET /cards-detailed/{cardId} : Récupère les détails d'une carte Pokémon en f
 
 ### Composants :
 
-1.CardsDetailed :
+1. CardsDetailed :
 Affiche les détails d'une carte Pokémon spécifique et un slider des cartes portant le même nom.
 
-2.Cards :
+2. Cards :
 Affiche toutes les cartes Pokémon existantes avec un filtre lié aux différents boosters et un système de recherche lié au nom du Pokémon.
 
-3.Collection :
+3. Collection :
 Affiche un slider de chaque booster différent, avec une redirection vers Cards si l'un d'entre eux est sélectionné.
 Affiche une carte aléatoire, avec une redirection vers CardsDetailed si sélectionnée.
 
