@@ -20,14 +20,30 @@ Accédez au répertoire du projet : cd site-TCG
 Lancez l'application en mode développement : npm run start
 
 # Fonctionnalités
-Affichage des cartes détaillées
+Affichage des cartes détaillées :
+
 L'application permet d'afficher les détails d'une carte Pokémon spécifique.
 
 Endpoints
+
 GET /cards-detailed/{cardId} : Récupère les détails d'une carte Pokémon en fonction de son ID.
 
-Composants
-CardsDetailed : Affiche les détails d'une carte Pokémon spécifique.
+## Composants :
+
+      * CardsDetailed : 
+
+        Affiche les détails d'une carte Pokémon spécifique et un slider des cartes portant le méme nom.
+
+      * Cards : 
+        
+         Affiche toutes les cartes pokémon existante avec un filtre lié aux différents Booster et un systeme de recherche lié au nom du pokémon.
+
+      * Collection : 
+
+        1/ Affiche un slider de chaque booster diférent , avec une redirection vers Cards si l'un d'eux est selectionés.
+
+        2/ Affiche une cartes aléatoire , avec une redirection vers CardsDetailed si selectioné.
+
 Affichage des images d'énergie
 L'application affiche les images d'énergie associées à une carte Pokémon.
 
