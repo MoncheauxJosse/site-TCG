@@ -11,10 +11,6 @@ Clonez le dépôt GitHub du projet : git clone <URL du dépôt>
 Accédez au répertoire du projet : cd <répertoire du projet>
 Installez les dépendances : npm install
 
-# Configuration
-Renommez le fichier .env.example en .env.
-Ouvrez le fichier .env et configurez les variables d'environnement si nécessaire.
-
 # Exécution
 Accédez au répertoire du projet : cd site-TCG
 Lancez l'application en mode développement : npm run start
