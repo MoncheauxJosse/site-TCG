@@ -28,21 +28,17 @@ Endpoints
 
 GET /cards-detailed/{cardId} : Récupère les détails d'une carte Pokémon en fonction de son ID.
 
-## Composants :
+### Composants :
 
-      * CardsDetailed : 
+1.CardsDetailed :
+Affiche les détails d'une carte Pokémon spécifique et un slider des cartes portant le même nom.
 
-        Affiche les détails d'une carte Pokémon spécifique et un slider des cartes portant le méme nom.
+2.Cards :
+Affiche toutes les cartes Pokémon existantes avec un filtre lié aux différents boosters et un système de recherche lié au nom du Pokémon.
 
-      * Cards : 
-        
-         Affiche toutes les cartes pokémon existante avec un filtre lié aux différents Booster et un systeme de recherche lié au nom du pokémon.
-
-      * Collection : 
-
-        1/ Affiche un slider de chaque booster diférent , avec une redirection vers Cards si l'un d'eux est selectionés.
-
-        2/ Affiche une cartes aléatoire , avec une redirection vers CardsDetailed si selectioné.
+3.Collection :
+Affiche un slider de chaque booster différent, avec une redirection vers Cards si l'un d'entre eux est sélectionné.
+Affiche une carte aléatoire, avec une redirection vers CardsDetailed si sélectionnée.
 
 Affichage des images d'énergie
 L'application affiche les images d'énergie associées à une carte Pokémon.
