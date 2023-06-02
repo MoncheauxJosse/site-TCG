@@ -63,6 +63,12 @@ Autoprefixer : un plugin PostCSS pour ajouter automatiquement les préfixes CSS 
 
 PostCSS : un outil de transformation de CSS.
 
+Express : un framework web pour Node.js permettant de créer des applications web et des API.
+
+Cors : un package middleware qui permet d'activer les requêtes cross-origin (CORS) dans une application Express.
+
+Concurrently : un package npm permettant d'exécuter plusieurs commandes en parallèle dans l'environnement de développement. (ainsi lancé les 2 api en même temps )
+
 # Structure du projet
 ```
 ├── Back/                        # Répertoire Api server
