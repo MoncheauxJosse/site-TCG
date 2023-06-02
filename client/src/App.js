@@ -1,6 +1,6 @@
-import Collection from './component/collection';
-import Cards from './component/cards';
-import Menu from './componentFixe/menus';
+import Collection from './component/Collection';
+import Cards from './component/Cards';
+import Menu from './componentFixe/Menus';
 import CardsDetailed from './component/CardsDetailed';
 import { Route, Routes } from 'react-router-dom';
 

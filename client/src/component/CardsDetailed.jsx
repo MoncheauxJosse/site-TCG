@@ -3,20 +3,7 @@ import { useParams,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import fondImage from '../image/video/Pokemon-Background-Loop.mp4';
 import loading from '../image/gif/loadingCollection.gif';
-
-
-//recupere toute les images energie 
-const importAll = (r) => {
-  let images = {};
-  r.keys().map((item, index) => {
-    images[item.replace('./', '')] = r(item);
-    return null;
-  });
-  return images;
-};
-
-// utilise la fonction importAll pour récuperer toutes les images avec l'extension choisie (jpg , png , ect...)
-const images = importAll(require.context('../image/energie', true, /\.(png|jpe?g|svg)$/));
+import {getImageForCost} from '../util/ImageUtils'
 
 
 const CardsDetailed = () => {
@@ -26,10 +13,10 @@ const CardsDetailed = () => {
   const [cardData, setCardData] = useState(null);
 
   //----------------Slider----------------------------
-  const [collections, setCollections] = useState([]); // État pour stocker les collections
-  const [isLoading, setIsLoading] = useState(true); // État pour indiquer si le chargement est en cours
-  const sliderRef = useRef(null); // Référence à l'élément du slider
-  const [hoveredItem, setHoveredItem] = useState(null); // État pour suivre l'élément survolé
+  const [collections, setCollections] = useState([]); 
+  const [isLoading, setIsLoading] = useState(true); 
+  const sliderRef = useRef(null); 
+  const [hoveredItem, setHoveredItem] = useState(null); 
   const navigate = useNavigate(); 
 
   // Défilement vers la droite du slider
@@ -47,19 +34,6 @@ const CardsDetailed = () => {
   // click sur l'image pour changer de carte
   const handleImageClick = (event, selectedId) => {
     navigate(`/cards-detailed/${selectedId}`);
-  };
-
-  //trie les image "energie" en fonction du retour du cost ( dans le map)
-  const getImageForCost = (cost) => {
-    const imageName = cost.toString(); 
-    const imageWithoutExtension = imageName+'.png';
-    const matchingImage = images[imageWithoutExtension];
-    
-    if (matchingImage) {
-      return matchingImage;
-    } else {
-      return null;
-    }
   };
 
   useEffect(() => {

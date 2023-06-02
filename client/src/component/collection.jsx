@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useNavigate , Link } from 'react-router-dom';
-import './collection.css';
+import './Collection.css';
 import loading from '../image/gif/loadingCollection.gif';
 import fondImage from '../image/pokemon-background-loop.gif';
 import banderoleImage from '../image/banderole.png';
