@@ -13,6 +13,10 @@ Le site est une application web permettant de visualiser des cartes Pokémon dé
 
 3. Installez les dépendances : npm install
 
+4. Accédez au répertoire client : cd client
+
+5. Installez les dépendances du client : npm install
+
 # Exécution
 1.Accédez au répertoire du projet : cd site-TCG
 
